@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @author caozhongyu
  * @create 19-8-3
  */
-@FeignClient(name = "study-api")
+@FeignClient(name = "user-service")
 @Configuration
 public interface UserApi {
 
