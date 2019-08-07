@@ -10,6 +10,20 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>user-service-api</artifactId>
-
+  <!--设置发布仓库地址-->
+  <distributionManagement>
+    <!--releases版本发布至此仓库-->
+    <repository>
+      <id>study-nexus</id>
+      <name>study-nexus</name>
+      <url>http://148.70.30.245:8081/repository/maven-releases/</url>
+    </repository>
+    <!--snapshots版本发布至此版本-->
+    <snapshotRepository>
+      <id>study-nexus</id>
+      <name>study-nexus</name>
+      <url>http://148.70.30.245:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 </project>
